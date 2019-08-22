@@ -1,0 +1,8 @@
+<h1><%= @depart.id ? "Edit Depart" : "New Depart" %></h1>
+<hr />
+<%= form_for @depart do |f| %>
+  <%= f.label :dpt_name %>
+  <%= f.text_field :dpt_name, required: true, autofocus: true %>
+
+  <%= f.submit %>
+<% end %>

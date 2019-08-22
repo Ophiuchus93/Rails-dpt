@@ -1,0 +1,7 @@
+<h1>Click an Item to View Description</h1>
+<%= link_to "Create a new Item", new_depart_item_path(@depart) %>
+<ul>
+  <% @items.eqach do |item| %>
+    <li><%= link_to item.name, depart_item_path(@depart, item)%></li>
+  <% end %>
+</ul>  
